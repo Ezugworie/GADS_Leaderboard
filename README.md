@@ -1,8 +1,8 @@
 # Submission of the GADS project App for Android track
 The App is fetching the Leaders from [https://gadsapi.herokuapp.com](https://gadsapi.herokuapp.com)
 The leaders are in two classes
-+ [Learning Leaders](https://gadsapi.herokuapp.com/hours)
-+ [Skilliq Leaders](https://gadsapi.herokuapp.com/skilliq)
++ [Learning Leaders](https://gadsapi.herokuapp.com/api/hours)
++ [Skilliq Leaders](https://gadsapi.herokuapp.com/api/skilliq)
 
 
 ## Screenshots of App flow
