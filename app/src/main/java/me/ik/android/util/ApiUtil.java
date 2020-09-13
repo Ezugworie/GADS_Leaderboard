@@ -17,18 +17,18 @@ import javax.net.ssl.HttpsURLConnection;
 import me.ik.android.model.Leader;
 
 public class ApiUtil {
-    private ApiUtil(){}
+    private ApiUtil() {
+    }
 
     public static final String BASE_API_URL = "https://gadsapi.herokuapp.com";
 
     //Method to build the URL that we are going to use.
-    public static URL buildUrl(String path){
-        String fullURL = BASE_API_URL+path;
+    public static URL buildUrl(String path) {
+        String fullURL = BASE_API_URL + path;
         URL url = null;
-        try{
+        try {
             url = new URL(fullURL);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return url;
@@ -49,21 +49,20 @@ public class ApiUtil {
                 connection.disconnect();
                 return null;
             }
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             Log.d("LeaderBoard Error: ", e.toString());
             return null;
         }
     }
 
     //Method to get an array of leaders from the JSON string. We got the JSON string from the web API
-    public static ArrayList<Leader> getLeadersFromJson(String jsonString, String leaderType){
+    public static ArrayList<Leader> getLeadersFromJson(String jsonString, String leaderType) {
         //JSON string keys
         final String NAME = "name";
         final String COUNTRY = "country";
         final String BADGE_URL = "badgeUrl";
         final String HOURS = "hours";
-        final String SCORE="score";
+        final String SCORE = "score";
 
         //The array list we are building
         ArrayList<Leader> leaders = new ArrayList<>();
@@ -75,7 +74,7 @@ public class ApiUtil {
             int numberOfLeaders = jsonArray.length();
 
             //For each element in the array, get the required fields and update to the leaders array list
-            for (int i =0; i<numberOfLeaders;i++){
+            for (int i = 0; i < numberOfLeaders; i++) {
                 JSONObject leaderJSON = jsonArray.getJSONObject(i);
                 String name = leaderJSON.getString(NAME);
                 String scoreHours = leaderJSON.getString(leaderType);
@@ -84,8 +83,7 @@ public class ApiUtil {
                 leaders.add(new Leader(name, scoreHours, country, badgeUrl));
             }
 
-        }
-        catch (JSONException e) {
+        } catch (JSONException e) {
             e.printStackTrace();
         }
 

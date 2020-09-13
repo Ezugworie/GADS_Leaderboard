@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="me.ik.android.LeaderBoardActivity"
-    android:background="@drawable/ic_background">
+    android:background="@drawable/ic_background"
+    tools:context="me.ik.android.LeaderBoardActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -16,8 +16,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/main_padding"
-            android:paddingEnd="@dimen/main_padding"
-            android:paddingTop="@dimen/main_padding">
+            android:paddingTop="@dimen/main_padding"
+            android:paddingEnd="@dimen/main_padding">
+
             <TextView
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
@@ -26,23 +27,23 @@
                 android:minHeight="?actionBarSize"
                 android:padding="@dimen/appbar_padding"
                 android:text="@string/app_name"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
                 android:textColor="@color/colorAccent"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/submitButton"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/colorPrimary"
                 android:background="@drawable/btn_rounded_white"
+                android:text="@string/submit"
                 android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:text="@string/submit" />
+                app:layout_constraintTop_toTopOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -51,17 +52,19 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabTextColor="@color/colorAccent"
+            android:background="?attr/colorPrimary"
             app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
-            android:background="?attr/colorPrimary" >
+            app:tabTextColor="@color/colorAccent">
+
             <com.google.android.material.tabs.TabItem
+                android:id="@+id/learningTab"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/learningTab"/>
+                android:layout_height="wrap_content" />
+
             <com.google.android.material.tabs.TabItem
+                android:id="@+id/skillIQTab"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/skillIQTab"/>
+                android:layout_height="wrap_content" />
         </com.google.android.material.tabs.TabLayout>
     </com.google.android.material.appbar.AppBarLayout>
 

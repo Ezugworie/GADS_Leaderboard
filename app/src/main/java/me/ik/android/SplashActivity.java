@@ -35,7 +35,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onPostResume();
     }
 
-    public class LeadersQueryTask extends AsyncTask<Void, Void, ArrayList<String>>{
+    public class LeadersQueryTask extends AsyncTask<Void, Void, ArrayList<String>> {
         @Override
         protected ArrayList<String> doInBackground(Void... voids) {
 
@@ -54,8 +54,7 @@ public class SplashActivity extends AppCompatActivity {
                 jsonResult.add(ApiUtil.getJson(learningApiUrl));
                 jsonResult.add(ApiUtil.getJson(skillIqApiUrl));
 
-            }
-            catch (Exception e){
+            } catch (Exception e) {
                 Log.d("LeaderBoard Error: ", e.toString());
             }
 
@@ -64,7 +63,7 @@ public class SplashActivity extends AppCompatActivity {
         }
 
         //After successfully getting the data from web API, we need to update our DataManager
-        protected void onPostExecute(ArrayList<String> result){
+        protected void onPostExecute(ArrayList<String> result) {
             String learningLeaderString = "hours";
             String skillIqLeaderString = "score";
 
@@ -76,7 +75,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
             //After successfully getting the data from web API and updating DataManager, we now need to call the MainActivity.
-            Intent intent=new Intent(SplashActivity.this, LeaderBoardActivity.class);
+            Intent intent = new Intent(SplashActivity.this, LeaderBoardActivity.class);
             startActivity(intent);
             finish();
 

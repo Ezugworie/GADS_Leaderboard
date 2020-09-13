@@ -48,7 +48,6 @@ public class SubmitActivity extends AppCompatActivity {
     Retrofit retrofit;
     GadsSubmitInterface submitProject;
 
-    //static final String BASE_FORMS_URL = "https://docs.google.com/forms/u/0/d/e/";    //personal forms
     static final String BASE_FORMS_URL = "https://docs.google.com/forms/d/e/";          //GADS forms
 
     @Override
@@ -103,14 +102,13 @@ public class SubmitActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<Void> call, Response<Void> response) {
                         //if(response.code() == 200){
-                        if(response.isSuccessful()){
+                        if (response.isSuccessful()) {
                             txtFirstName.setText("");
                             txtLastName.setText("");
                             txtEmail.setText("");
                             txtGithub.setText("");
                             showInformationPopup(true);
-                        }
-                        else
+                        } else
                             showInformationPopup(false);
                     }
 
@@ -138,11 +136,10 @@ public class SubmitActivity extends AppCompatActivity {
         popupInformationDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         imgPopupInfo = popupInformationDialog.findViewById(R.id.imgDisplay);
         tvInformation = popupInformationDialog.findViewById(R.id.tvInformation);
-        if(submissionStatus){
+        if (submissionStatus) {
             tvInformation.setText(R.string.submission_successful);
             imgPopupInfo.setImageResource(ic_check);
-        }
-        else{
+        } else {
             tvInformation.setText(R.string.submission_not_successful);
             imgPopupInfo.setImageResource(ic_alert);
         }
@@ -158,6 +155,6 @@ public class SubmitActivity extends AppCompatActivity {
             public void run() {
                 popupInformationDialog.dismiss();
             }
-        },5000);
+        }, 5000);
     }
 }
