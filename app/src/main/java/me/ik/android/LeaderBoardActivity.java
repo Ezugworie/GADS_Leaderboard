@@ -39,8 +39,6 @@ public class LeaderBoardActivity extends AppCompatActivity {
         tabs.setupWithViewPager(viewPager);
 
 
-
-
         Button btnSubmit = findViewById(R.id.submitButton);
 
         //Add onclick listener to the button
@@ -48,7 +46,7 @@ public class LeaderBoardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //open the submit activity when submit button is clicked
-                Intent intent=new Intent(LeaderBoardActivity.this, SubmitActivity.class);
+                Intent intent = new Intent(LeaderBoardActivity.this, SubmitActivity.class);
                 startActivity(intent);
             }
         });
