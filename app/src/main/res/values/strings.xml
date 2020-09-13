@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LEADERBOARD</string>
+    <string name="learning_hours">learning hours</string>
+    <string name="skill_iq_score">skill IQ Score</string>
+    <string name="submit">Submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="project_on_github_link">Project on GITHUB (link)</string>
+    <string name="submission_successful">Submission Successful</string>
+    <string name="submission_not_successful">Submission not Successful</string>
+    <string name="are_you_sure">Are you sure<big>?</big></string>
+    <string name="yes">Yes</string>
+    <string name="project_submission">Project Submission</string>
+    <string-array name="tab_titles">
+        <item>Learning Leaders</item>
+        <item>Skill IQ Leaders</item>
+    </string-array>
+
+    <string-array name="display_details">
+        <item>learning hours</item>
+        <item>skill IQ Score</item>
+    </string-array>
+</resources>
