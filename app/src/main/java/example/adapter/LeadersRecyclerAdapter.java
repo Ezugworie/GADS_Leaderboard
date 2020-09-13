@@ -1,6 +1,7 @@
-package me.ik.android.adapter;
+package example.adapter;
 
 import android.content.Context;
+import example.model.Leader;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +15,6 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import me.ik.android.model.Leader;
 import me.ik.android.model.R;
 
 public class LeadersRecyclerAdapter extends RecyclerView.Adapter<LeadersRecyclerAdapter.LeaderViewHolder> {

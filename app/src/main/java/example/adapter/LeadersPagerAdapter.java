@@ -1,5 +1,7 @@
-package me.ik.android.adapter;
+package example.adapter;
 
+
+import example.util.Constants;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -7,8 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import me.ik.android.model.LeadersFragment;
-import me.ik.android.util.Constants;
+import example.model.LeadersFragment;
 
 public class LeadersPagerAdapter extends FragmentPagerAdapter {
     //private Context mContext;

@@ -1,4 +1,4 @@
-package me.ik.android.model;
+package example.model;
 
 public class Leader {
     private String name;

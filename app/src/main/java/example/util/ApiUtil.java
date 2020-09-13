@@ -1,7 +1,5 @@
-package me.ik.android.util;
+package example.util;
 
-
-import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -14,7 +12,9 @@ import java.util.Scanner;
 
 import javax.net.ssl.HttpsURLConnection;
 
-import me.ik.android.model.Leader;
+import example.model.Leader;
+
+import android.util.Log;
 
 public class ApiUtil {
     private ApiUtil() {

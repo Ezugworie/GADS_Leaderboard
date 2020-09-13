@@ -1,4 +1,4 @@
-package me.ik.android.model;
+package example.model;
 
 import java.util.ArrayList;
 

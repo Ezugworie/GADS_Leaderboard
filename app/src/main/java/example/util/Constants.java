@@ -1,4 +1,4 @@
-package me.ik.android.util;
+package example.util;
 
 public class Constants {
     public static final int LEARNING_LEADERS = 0;

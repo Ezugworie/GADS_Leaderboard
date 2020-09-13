@@ -1,5 +1,6 @@
-package me.ik.android;
+package example;
 
+import example.adapter.LeadersPagerAdapter;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -11,7 +12,6 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import me.ik.android.adapter.LeadersPagerAdapter;
 import me.ik.android.model.R;
 
 public class LeaderBoardActivity extends AppCompatActivity {

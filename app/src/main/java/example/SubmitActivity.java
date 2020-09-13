@@ -1,4 +1,4 @@
-package me.ik.android;
+package example;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import me.ik.android.network.GadsSubmitInterface;
+import example.network.GadsSubmitInterface;
 import me.ik.android.model.R;
 import retrofit2.Call;
 import retrofit2.Callback;

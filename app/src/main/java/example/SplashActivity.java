@@ -1,4 +1,4 @@
-package me.ik.android;
+package example;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,15 +6,15 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import example.util.ApiUtil;
 import android.util.Log;
 
 import java.net.URL;
 import java.util.ArrayList;
 
-import me.ik.android.model.DataManager;
-import me.ik.android.model.Leader;
+import example.model.DataManager;
+import example.model.Leader;
 import me.ik.android.model.R;
-import me.ik.android.util.ApiUtil;
 
 public class SplashActivity extends AppCompatActivity {
 

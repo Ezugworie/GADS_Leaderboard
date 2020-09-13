@@ -1,5 +1,6 @@
-package me.ik.android.model;
+package example.model;
 
+import example.adapter.LeadersRecyclerAdapter;
 import android.content.res.Resources;
 import android.os.Bundle;
 
@@ -7,14 +8,14 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import example.util.Constants;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-import me.ik.android.adapter.LeadersRecyclerAdapter;
-import me.ik.android.util.Constants;
+import me.ik.android.model.R;
 
 /**
  * A simple {@link Fragment} subclass.
