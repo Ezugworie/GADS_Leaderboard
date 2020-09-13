@@ -42,8 +42,6 @@ public class LeadersFragment extends Fragment {
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
      * @return A new instance of fragment LearningLeaders.
      */
     // TODO: Rename and change types and number of parameters
@@ -82,7 +80,7 @@ public class LeadersFragment extends Fragment {
 
         String leaderString = displayDetails[mLeaderType];         //display based on learning hours
         ArrayList<Leader> leaders;
-        if(mLeaderType == Constants.LEARNING_LEADERS)
+        if (mLeaderType == Constants.LEARNING_LEADERS)
             leaders = DataManager.getInstance().getLearningLeaders();     //Get array list of learning leaders from DataManager
         else
             leaders = DataManager.getInstance().getSkillIqLeaders();     //Get array list of skill iq leaders from DataManager

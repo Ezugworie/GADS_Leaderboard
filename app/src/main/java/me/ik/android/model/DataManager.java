@@ -7,8 +7,8 @@ public class DataManager {
     private ArrayList<Leader> mLearningLeaders = new ArrayList<>();
     private ArrayList<Leader> mSkillIqLeaders = new ArrayList<>();
 
-    public static DataManager getInstance(){
-        if(ourInstance == null){
+    public static DataManager getInstance() {
+        if (ourInstance == null) {
             ourInstance = new DataManager();
 
         }

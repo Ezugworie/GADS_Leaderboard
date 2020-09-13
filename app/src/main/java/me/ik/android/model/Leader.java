@@ -6,21 +6,20 @@ public class Leader {
     private String country;
     private String badgeUrl;
 
-    public Leader(String name, String hours_score, String country, String badgeUrl){
+    public Leader(String name, String hours_score, String country, String badgeUrl) {
         try {
             this.setName(name);
             this.setHours_score(hours_score);
             this.setCountry(country);
             this.setBadgeUrl(badgeUrl);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     //Get the string to be displayed under the leader's name
-    public String getDetails(String leaderType){
-        return getHours_score() + " "+ leaderType + ", " + getCountry() + ".";
+    public String getDetails(String leaderType) {
+        return getHours_score() + " " + leaderType + ", " + getCountry() + ".";
     }
 
     public String getName() {
